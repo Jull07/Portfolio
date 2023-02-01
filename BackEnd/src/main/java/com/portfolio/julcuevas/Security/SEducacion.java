@@ -47,19 +47,7 @@ public class SEducacion {
     return rEducacion.existsById(id);
     }
     
-    public boolean existByNombreE(String nombreE){
-        return rEducacion.existByNombreE(nombreE);
-    }
-
-    public boolean existsByNombreE(String nombreE) {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
-    }
-
-    public boolean existsById(int id) {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
-    }
-
-    public Object getByNmbreE(String nombreE) {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+     public boolean existsByNombreE(String nombreE){
+        return rEducacion.existsByNombreE(nombreE);
     }
 }
