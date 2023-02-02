@@ -1,0 +1,52 @@
+<div class="row justify-content-center mt-3">
+  
+    <div class="col" >
+       <div class="card shadow-sm">
+         <div class="card text-center border-info" id="Proyectos">
+             <div class="card-body">
+                <img src="../../../assets/Proyect.jpg" width="300" height="300"
+                class="img-fluid">
+                <h4 class="card-title">Proyectos</h4>
+                  <p class="card-text">
+                    En mis Proyectos, ademas de este portfolio, tambien estan mis trabajos de Diseño y Animacion Grafica: <a href="https://youtu.be/UYXNPX8lzfQ">REEL</a>
+                </p>
+                <a href="#" class="btn btn-primary my-2" style="background-color: rgb(129, 124, 124);">Editar</a>
+                  </div>
+                 </div>
+                </div>
+               </div>
+           
+          
+        
+          <div class="col lg 1">
+            <div class="col-lg-11">
+            <div class="card shadow-sm">
+       <div class="card text-center border-info" id="Educacion">
+        <div class="card-body">
+            <img src="../assets/Educacion.jpg" width="300" height="300" class="img-fluid">
+          <h4 class="card-title">Educacion</h4>
+       <table class="table">
+        <tbody> 
+            <tr *ngFor="let Educacion of educacion" >
+                <td>
+                    <h2>{{Educacion.nombreE}}</h2>
+                </td>
+                <td>{{Educacion.descripcionE}}</td>
+                <td *ngIf="isLogged">
+                    <button class="btn btn-light" routerLink="/editedu/{{Educacion.id}}">
+                            <i class="bi bi-pencil-fill"></i> EDITAR</button>
+                </td>
+                <td *ngIf="isLogged">
+                    <button class="btn btn-danger" (click)="delete(Educacion.id)">
+                        <i class="bi bi-trash-fill"></i> BORRAR</button>
+                </td>
+                
+            </tr>
+        </tbody>
+
+       </table>
+    </div>
+    </div>
+    </div>
+    </div>
+</div>
