@@ -20,6 +20,11 @@
         <maven.compiler.target>9</maven.compiler.target>
     </properties>
     <dependencies>
+      <dependency>
+    <groupId>javax.xml.bind</groupId>
+    <artifactId>jaxb-api</artifactId>
+    <version>2.3.1</version>
+</dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-data-jpa</artifactId>
@@ -87,6 +92,9 @@
             <version>3.1.0</version>
             <type>jar</type>
         </dependency>
+        
+        
+        
     </dependencies>
        
 
